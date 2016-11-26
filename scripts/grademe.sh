@@ -1,6 +1,4 @@
 curl -X POST -H "Content-Type: application/json" -d '{
-          "team_name": "honestbee",
-          "service_url": "http://${DEPLOY_TARGET}",
-          "competition_round": "first_round",
-          "type": "score"
+          "team_name": "${CI_PROJECT_DIR}",
+          "competition_round": "${ROUND}",
       }' "http://scorer.honestbee.com:5000/submit"
