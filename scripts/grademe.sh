@@ -1,3 +1,6 @@
+echo ${CI_PROJECT_DIR:8}
+echo ${ROUND}
+
 curl -siX POST -H "Content-Type: application/json" -d '{
   "team_name": "${CI_PROJECT_DIR:8}",
   "competition_round": "${ROUND}",
