@@ -58,4 +58,4 @@ ansible-deploy:
 scoreme:
   stage: grading
   script:
-    - ../scripts/grademe.sh
+    - ./scripts/grademe.sh
