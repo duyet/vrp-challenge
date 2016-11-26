@@ -58,7 +58,7 @@ ansible-deploy:
 scoreme:
   stage: grading
   script:
-    - curl -X POST -H "Content-Type: application/json" -d '{
+    - >curl -X POST -H "Content-Type: application/json" -d '{
           "team_name": "honestbee",
           "service_url": "http://${DEPLOY_TARGET}",
           "competition_round": "first_round",
