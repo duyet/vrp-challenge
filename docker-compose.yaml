@@ -1,7 +1,7 @@
 version: "2"
 services:
   api:
-    image: glr.honestbee.com/binhngoc17/vrp_sample:latest
+    image: glr.honestbee.com/binhngoc17/vrp_public:latest
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379

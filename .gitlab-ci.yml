@@ -15,6 +15,7 @@ stages:
 - build
 - release
 - deploy
+- grading
 
 build:
   stage: build
@@ -53,3 +54,13 @@ ansible-deploy:
       playbooks/deploy-compose.yaml
   only:
     - master
+
+scoreme:
+  stage: grading
+  script:
+    - curl -X POST -H "Content-Type: application/json" -d '{
+          "team_name": "honestbee",
+          "service_url": "http://${DEPLOY_TARGET}",
+          "competition_round": "first_round",
+          "type": "score"
+      }' "http://scorer.honestbee.com:5000/submit"
