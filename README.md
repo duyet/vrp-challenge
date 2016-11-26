@@ -30,17 +30,14 @@ curl localhost
 
 Alternatively, you may use the images built by gitlab.
 
-1. Provide your docker engine with your gitlab repository credentials.
+Provide your docker engine with your gitlab repository credentials.
 
    Use your gitlab username and password:
    ```
    docker login glr.honestbee.com
    ```
 
-1. Once you push code, Gitlab will run a build the CI pipeline.
-   ```
-   docker run -d -p 80:5000 --name vrp_sample glr.honestbee.com/binhngoc17/vrp_sample:master
-   ```
+Once you push code, Gitlab will run a build the CI pipeline to build, release and deploy your application to your server.
 
 ## Grading
 
