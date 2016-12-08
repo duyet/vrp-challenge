@@ -1,7 +1,5 @@
 # Sample application
 
-[![build status](https://gitlab.honestbee.com/binhngoc17/vrp_public/badges/master/build.svg)](https://gitlab.honestbee.com/binhngoc17/vrp_public/commits/master)
-
 This is an example application that does not do much.
 
 Read [First Round](first_round/) Instructions.
